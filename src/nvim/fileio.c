@@ -2655,7 +2655,7 @@ buf_write(
     /*
      * Check if the timestamp hasn't changed since reading the file.
      */
-    if (overwriting) {
+    if (overwriting && p_ow) {
       retval = check_mtime(buf, &file_info_old);
       if (retval == FAIL)
         goto fail;

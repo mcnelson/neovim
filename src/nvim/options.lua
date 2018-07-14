@@ -1667,6 +1667,12 @@ return {
       defaults={if_true={vi=""}}
     },
     {
+      full_name='overwritewarning', abbreviation='ow',
+      type='bool', scope={'global'},
+      varname='p_ow',
+      defaults={if_true={vi=true}}
+    },
+    {
       full_name='packpath', abbreviation='pp',
       type='string', list='onecomma', scope={'global'},
       deny_duplicates=true,

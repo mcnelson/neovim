@@ -4256,6 +4256,15 @@ A jump table for the options with a short description can be found at |Q_op|.
 	This option cannot be set from a |modeline| or in the |sandbox|, for
 	security reasons.
 
+				 *'overwritewarning'* *'ow'*
+				 *'nooverwritewarning'* *'noow'*
+'overwritewarning' 'ow'		boolean	(default on)
+			global
+	When writing a file, Vim ensures its modified time hasn't
+	changed since the last read. Specifies whether the user is prompted
+	for confirmation if this time differs with "WARNING: The file has
+	been changed since reading it!!!"
+
 				*'packpath'* *'pp'*
 'packpath' 'pp'		string	(default: see 'runtimepath')
 	Directories used to find packages.  See |packages|.
